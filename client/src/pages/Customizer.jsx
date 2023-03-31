@@ -10,8 +10,39 @@ import { fadeAnimation, slideAnimation } from '../config/motion';
 import { ColorPicker, AIPicker, Tab, CustomButton, FilePicker } from '../components';
 
 const Customizer = () => {
-  return (
-    <div>Customizer</div>
+    const snap = useSnapshot(state);
+
+
+  return (  
+    <AnimatePresence>
+
+        {!snap.intro && (
+            <>
+            <motion.div
+            key = 'custom'
+            className='absolute top-0 left-0 z-10'
+            {...slideAnimation('left')}>
+                <div className='flex items-center min-h-screen'>
+                    <div className='editortabs-container tabs'>
+                        {EditorTabs-Map((tab) => (
+                            <Tab 
+                            key = {tab.name}
+                            tab = {tab}/>
+                        ))}
+                    </div>
+                </div>
+            </motion.div>
+
+
+            <motion.div
+            key = 'custom'
+            className='absolute top-5 right-5 z-10'
+            {...fadeAnimation('left')}>
+                
+            </motion.div>
+            </>
+        )}
+    </AnimatePresence>
   )
 }
 
