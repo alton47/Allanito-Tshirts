@@ -48,11 +48,15 @@ const Customizer = () => {
              <motion.div
             className='filtertabs-container'
             {...slideAnimation('up')}>
-                <Tab 
-                   type = 'filled'
-                   title = 'Go Back'
-                   handleClick={() => state.intro = true}
-                   customStyles = 'w-fit px-4 py-2.5 font-bold text-sm'/>          
+
+            {FilterTabs.map((tab) => (
+              <Tab 
+                tab = {tab}
+                key = {tab.name}
+                isFilterTab
+                isActiveTab = ''
+                handleClick = {() => {}}/>
+            ))}
             </motion.div>
             </>
         )}
@@ -61,3 +65,13 @@ const Customizer = () => {
 }
 
 export default Customizer
+
+
+/* 
+<button className='download-btn' onClick={downloadCanvasToImage}>
+<img
+  src={download}
+  alt='download_image'
+  className='w-3/5 h-3/5 object-contain'
+/>
+</button> */
