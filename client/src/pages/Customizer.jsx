@@ -25,9 +25,23 @@ const Customizer = () => {
 
 
     //Show Tab content dependencies
-    const generateTabCOntent = () => {
-      
+    const generateTabContent = () => {
+      switch (activeEditorTab) {
+        case 'colorpicker':
+          return <ColorPicker />
+         
+        case 'filepicker':
+            return <FilePicker />  
+
+        case 'aipicker':
+            return <AIPicker />    
+         
+        default:
+          return null;
+      }   
     }
+
+
 
   return (  
     <AnimatePresence>
@@ -44,8 +58,10 @@ const Customizer = () => {
                             <Tab 
                             key = {tab.name}
                             tab = {tab}
-                            handleClick = {() => {}}/>
+                            handleClick = {() => setActiveEditorTab(tab.name)}/>
                         ))}
+
+                        {generateTabContent()}
                     </div>
                 </div>
             </motion.div>
