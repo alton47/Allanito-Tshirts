@@ -19,11 +19,10 @@ This is a website that allows you to create custom t-shirts with your own text a
 ## How to use
 
 - Visit https://tshirt.allanalton.com/
-- Click on "Create your own t-shirt"
-- Enter your text and/or upload your image
-- Adjust the position, size and rotation of your elements
-- Choose your t-shirt color, size and style
-- Click on "Add to cart" and proceed to checkout
+- Click on "Customize it"
+- Pick your color or upload your image
+- Adjust whether to show it at the center or cover
+- Enjoy!😁
 
 
 ##For private 1-on-1 project-based coaching - allan@allanalton.com
