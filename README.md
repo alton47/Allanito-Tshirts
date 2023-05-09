@@ -4,17 +4,9 @@
 
 <img width="1920" alt="Screenshot 2023-05-09 at 11 55 30" src="https://github.com/alton47/Allanito-Tshirts/assets/79355369/b2d2f2c3-2574-44fc-a157-c3164934877f">
 
-# T-Shirt Generator
 
 This is a website that allows you to create custom t-shirts with your own text and images. You can choose from different fonts, colors, sizes and styles of t-shirts. You can also preview your design before ordering.
 
-## Features
-
-- Easy to use interface
-- Responsive design
-- Secure payment system
-- Fast delivery
-- High quality printing
 
 ## How to use
 
